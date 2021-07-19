@@ -9,7 +9,7 @@ Click on the Search button.
 successfully test case passed.
 
 2. KLE Technological University :
-Automatically go to KLE Technological University
+Automatically check some functionality using selenium with python
 get the URL :https://kletech.ac.in
 in this college website i have tested some functionality  using unit test case.
 
