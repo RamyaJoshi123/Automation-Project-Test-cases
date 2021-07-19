@@ -1,3 +1,4 @@
+#import packages
 from selenium import webdriver
 import unittest
 from selenium.webdriver.common.by import By
@@ -14,9 +15,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
+#creating class Test
 class Test(unittest.TestCase):
 
-    @classmethod
+    @classmethod  #annotation
     def setUpClass(cls):
         PATH = "F:\chrome driver\chromedriver.exe"
         cls.driver = webdriver.Chrome(PATH)
@@ -25,14 +27,14 @@ class Test(unittest.TestCase):
 
 
 
-    def test_admission_eligibity_post_graduate(self):
+    def test_admission_eligibity_post_graduate(self):   #go to admission menu click on post graduate programs
         self.driver.get("https://www.kletech.ac.in/")
         self.driver.find_element_by_link_text("ADMISSION").click()
         self.driver.get("https://www.kletech.ac.in/admission/admission-to-post-graduate-programs/")
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(3)
 
-    def test_findmca(self):
+    def test_findmca(self):   #test whether mca admission form is woking properly or not
         self.driver.get("https://www.kletech.ac.in/")
         self.driver.find_element_by_link_text("ACADEMICS").click()
         self.driver.get("https://www.kletech.ac.in/master-of-computer-application/")
