@@ -1,3 +1,5 @@
+#import all package
+
 from selenium import webdriver
 import pytest
 import unittest
@@ -10,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
-
+#Run multiple test cases in multiple browser using pytest
 class Testkle(unittest.TestCase):
 
 
