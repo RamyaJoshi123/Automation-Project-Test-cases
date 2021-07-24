@@ -27,7 +27,7 @@ class Test(unittest.TestCase):
 
 
 
-    def test_admission_eligibity_post_graduate(self):   #go to admission menu click on post graduate programs
+    def test_admission_eligibity_post_graduate(self):   
         self.driver.get("https://www.kletech.ac.in/")
         self.driver.find_element_by_link_text("ADMISSION").click()
         self.driver.get("https://www.kletech.ac.in/admission/admission-to-post-graduate-programs/")
